@@ -1,0 +1,367 @@
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.p-najbolje {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 70px;
+}
+
+/* Navbar*/
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.active {
+  font-weight: 1000;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#logo-img {
+  height: 25px;
+  width: auto;
+}
+
+/* full bg image */
+
+.home-bg {
+  height: 100%;
+  background: url(../img/home-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* G CLASS */
+
+.g-body {
+  background-color: #333747;
+  position: relative;
+}
+
+/* Prva Sekcija */
+.first-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/g-class1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.g-s1-wrapper {
+  width: 50%;
+  color: blanchedalmond;
+}
+
+.g-s1-h1 {
+  font-size: 60px;
+}
+
+.g-s1-p {
+  font-size: 30px;
+}
+
+/* Druga Sekcija */
+.g-s2-h1 {
+  font-size: 60px;
+  text-align: center;
+  color: blanchedalmond;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.g-s2-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.g-s2-wrapper-text {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+}
+
+.g-s2-p {
+  font-size: 24px;
+  color: blanchedalmond;
+  letter-spacing: 1px;
+  line-height: 120%;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+.g-s2-img {
+  height: 80%;
+  justify-self: center;
+  grid-column: 2/-1;
+  justify-self: center;
+  grid-row: 1/-1;
+}
+
+/* S klasa */
+
+.s-first-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/s-class.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.s-s1-wrapper {
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+.s-s1-h1 {
+  font-size: 60px;
+}
+
+.s-s1-p {
+  font-size: 30px;
+}
+
+.s-iframe {
+  height: 630px;
+  width: 1020px;
+  margin: 0 auto;
+  display: block;
+}
+
+.s-s2-h1 {
+  text-align: center;
+  color: blanchedalmond;
+  font-size: 60px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.s-s2-p {
+  text-align: center;
+  color: blanchedalmond;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+/* EQS */
+
+.eqs-first-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/eqs.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.eqs-s1-wrapper {
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+.eqs-s1-h1 {
+  font-size: 60px;
+}
+
+.eqs-s1-p {
+  font-size: 30px;
+}
+
+.eqs-perf-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: start;
+  color: blanchedalmond;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.eqs-perf-wrapper-h3 {
+  font-size: 30px;
+}
+
+.eqs-perf-wrapper-p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.eqs-perf-wrapper-box {
+  border-left: blanchedalmond 3px solid;
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.mar-bot-50 {
+  margin-bottom: 50px;
+}
+
+.eqs-perf-txt {
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.eqs-interior {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/eqs-interior.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+/* Galerija */
+
+.gal-h1 {
+  text-align: center;
+  color: blanchedalmond;
+  font-size: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Vas izbor */
+
+.vas-h1 {
+  font-size: 60px;
+  color: blanchedalmond;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.vas-p {
+  text-align: center;
+  font-size: 24px;
+  color: blanchedalmond;
+}
+
+.vas-slike-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.vas-img {
+  width: 100%;
+  height: auto;
+}
+
+.vas-img:hover {
+  filter: drop-shadow(5px 10px 12px #fff);
+  transform: scale(1.2);
+  transition-duration: 500ms;
+  animation-duration: 2s;
+  cursor: pointer;
+}
+
+#vas-p-rez {
+  font-size: 40px !important;
+}

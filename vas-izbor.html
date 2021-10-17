@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://use.fontawesome.com/35d9183b55.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaš izbor</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="g-body">
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">
+        <img id="logo-img" src="img/logo.png" alt="" />
+      </a>
+      <a href="g-class.html">G-Class</a>
+      <a href="s-class.html">S-Class</a>
+      <a href="eqs.html">EQS</a>
+      <a href="galerija.html">Galerija</a>
+      <a href="vas-izbor.html" class="active">Vaš izbor</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <h1 class="vas-h1">Vaš izbor</h1>
+    <br />
+    <p class="vas-p">Odaberite sliku sa omiljenim vozilom.</p>
+
+    <div class="vas-slike-wrapper">
+      <img
+        id="g"
+        src="img/g-class2.png"
+        alt=""
+        class="vas-g vas-img"
+        onclick="omiljeni()"
+      />
+      <img
+        id="s"
+        src="img/s-class.png"
+        alt=""
+        class="vas-s vas-img"
+        onclick="omiljeni()"
+      />
+      <img
+        id="eqs"
+        src="img/eqs-png.webp"
+        alt=""
+        class="vas-eqs vas-img"
+        onclick="omiljeni()"
+      />
+    </div>
+
+    <p id="vas-p-rez" class="vas-p"></p>
+    <p class="vas-p" id="vas-p-spec"></p>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
